@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<title>Game of Random Scales</title>
+</head>
+
+<body>
+
+<div id="header">
+  <h1>Guess a Scale</h1>
+  <p></p>
+</div>
+
+<div id="header_menu"> 
+<!--
+//Get the search button later
+<form method="get" action="http://www.mysite.com/search.php"> 
+<input type="text" name="zoom_query" placeholder="Search F3 Docs" style="width:120px; border:0px solid; height:20px; padding:2px 50px; position:relative;"> 
+<input type="submit" value="" style="border-style: none; background: url('images/searchbutton3.gif') no-repeat; width: 24px; height: 21px; padding:8px 30px;">
+</form> 
+-->
+</div>
+
+<div id="container">
+
+<div id="left">
+
+<div id="navcontainer">
+<ul id="navlist">
+                <li>What's a major scale?</li>
+				<li>Play a random scale</li>
+				<li>What is this scale?</li>
+				<li>I want a hint!</li>				
+</ul>
+</div>
+</div>
+
+
+<div id="right">
+<button id="btn_04" class="button_secondary" onclick="location.reload()">Play another game</button>  
+</div>
+
+<div id="content">
+<h3>What's a major scale?</h3>
+<p><a href="https://en.wikipedia.org/?title=Major_scale" target="_blank">Wikipedia</a> can tell you.</p>
+<p>Remember <a href="https://www.youtube.com/watch?v=_dpGmAc3kMk" target="_blank">this song</a> from The Sound of Music?</p>
+<hr>
+<!--
+<h3>How to play</h3>
+<p>Play a random scale.</p>
+<p>Guess the key for this randomly selected major scale. The scales begin with C major, (starting at middle C on the piano), and progress upwards to a B-major scale. Every scale in this game starts on a white key.</p><p>Enter a capital letter.</p>
+<p>Need a big hint? You can see the score for the scale.</p>
+<p>This game will train your ability to recognize <a href="https://en.wikipedia.org/wiki/Absolute_pitch" target="_blank">absolute pitch</a>.</p> -->
+<h3>Play a random scale</h3>
+<p>This game trains your ability to recognize <a href="https://en.wikipedia.org/wiki/Absolute_pitch" target="_blank">absolute pitch</a>.</p>
+<p>
+<button id="btn_02" class="button_secondary" onclick="changeSound()">Play scale</button> </p> 
+ 
+<p id="playSound"></p>
+<hr>
+<p id="guessArea"></p>
+<h3>What is this scale?</h3>
+<p>Guess the key for this randomly selected major scale. The scales begin with C major, (starting at middle C on the piano), and progress upwards to a B-major scale. Every scale in this game starts on a white key.</p><p>Enter a capital letter.</p>
+<p>
+    <div class="scale-guess">
+    
+      <label for="myGuess">Guess</label>
+      <input id="myGuess" class="myguess" type="text">
+      
+      <button id="btn_03" onclick="guessScale()">Submit my guess!</button>
+  </p>    
+      <p id="output">Your guess is:  </p>
+	  <hr>
+<h3>I want a hint!</h3>
+<p>Stumped? View the score for the current scale.</p>
+<p><button id="btn_05" onclick="showScore()">Show me the score!</button>
+<p id="seeScore"></p>
+</div>
+
+<div id="footer"><center>
+<table>
+<tr><td colspan="3"><a href="about.html" target="_blank">About this game</a></td></tr>
+</table>
+</center>
+</div>
+
+</div>
+<!-- end wrapper -->
+<script src="scripts/prism.js"></script>
+<script src="scripts/random_sound2.js"></script> 
+<script src="scripts/takeguess.js"></script> 
+<!--<script src="scripts/name_greet.js"></script> -->
+</body>
+</html>
