@@ -1,2 +1,3 @@
 # learn-pitches
-Simple JavaScript game to learn musical pitches
+Simple JavaScript game to learn musical pitches.
+
